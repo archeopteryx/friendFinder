@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- all of the css goodness and references -->
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <h3><strong>About You</strong></h3>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Link to Photo Image (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <section id="friend-form">
+      <section class="form-group">
+
+        <h3><strong>Question 1</strong></h3>
+        <h4>Please rate this particular bunny on a scale of 1 to 5 (5 being the best)</h4>
+        <img id="bun1" src="https://pbs.twimg.com/profile_images/447374371917922304/P4BzupWu.jpeg" alt="bunny1" height="500">
+        <br>
+        <select class="chosen-select" id="score1">
+          <option value=""></option>
+          <option value="1">1 (This bunny is subpar)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (An excellent bunny)</option>
+        </select>
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>Please select the level of lop eared-ness you prefer in bunnies (1 being the most lopped and 5 being the most perky)</h4>
+        <img id="bun2" src="https://static1.squarespace.com/static/54ff9a97e4b063025cf9895c/59001e7229687fbe26c4dca0/59a79df68419c278e3f72582/1504160081819/DSC_3640.JPG?format=2500w" alt="bunny2" height="500">
+        <br>
+        <select class="chosen-select" id="score2">
+          <option value=""></option>
+          <option value="1">1 (Very lop eared!)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Very perky ears!)</option>
+        </select>
+
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>Please select your preferred size of bunny (1 being smallest and 5 being largest)</h4>
+        <img id="bun3" src="https://www.warrenphotographic.co.uk/photography/cats/31946.jpg" alt="bunny3" height="500">
+        <br>
+        <select class="chosen-select" id="score3">
+          <option value=""></option>
+          <option value="1">1 (Smaller/Dwarf Rabbits are best!)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Larger/Flemish Giant Rabbits are best!)</option>
+        </select>
+
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>Please select your preferred bunny personality (1 being the shyest and 5 being the angriest)</h4>
+        <img id="bun4" src="https://media.istockphoto.com/photos/angry-rabbit-picture-id172196895?k=6&m=172196895&s=612x612&w=0&h=bS6cxO9v8c4sVe9xXxyHeNlq_Cz7sWXJvlmOw6-L9P8=" alt="bunny4" height="500">
+        <br>
+        <select class="chosen-select" id="score4">
+          <option value=""></option>
+          <option value="1">1 (Shy and/or timid)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Brave and/or rambunctious)</option>
+        </select>
+
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>Please rate how much you agree with this statement: "I like big buns and I cannot lie" (1 being disagreement and 5 being agreement)</h4>
+        <img id="bun5" src="https://s-media-cache-ak0.pinimg.com/originals/59/4a/87/594a87f48fff234bc92a2edfb7e9c893.jpg" alt="bunny5" height="500">
+        <br>
+        <select class="chosen-select" id="score5">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>Please rate how much you agree with this statement: "I prefer my buns toasty" (1 being disagreement and 5 being agreement)</h4>
+        <img id="bun6" src="https://sociorocketnewsen.files.wordpress.com/2015/11/usagi-futon-2.jpg?w=580&h=449" alt="bunny6" height="500">
+        <br>
+        <select class="chosen-select" id="score6">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>Please rate how much you agree with this statement: "I work out my buns!" (1 being disagreement and 5 being agreement)</h4>
+        <img id="bun7" src="https://s-media-cache-ak0.pinimg.com/originals/d2/d9/51/d2d9514ef5dc7c716ada4a21a22d0bf8.jpg" alt="bunny7" height="500">
+        <br>
+        <select class="chosen-select" id="score7">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 8</strong></h3>
+        <h4>Please rate how much you agree with this statement: "I like my man-buns with man-buns" (1 being disagreement and 5 being agreement)</h4>
+        <img id="bun8" src="http://i.imgur.com/EDZJgVn.jpg" alt="bunny8" height="500">
+        <br>
+        <select class="chosen-select" id="score8">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 9</strong></h3>
+        <h4>Please rate how much you agree with this statement: "When I look at rabbits, I really don't carrot all!" (1 being disagreement and 5 being agreement)</h4>
+        <img id="bun9" src="https://memegenerator.net/img/instances/56284154.jpg" alt="bunny9" height="500">
+        <br>
+        <select class="chosen-select" id="score9">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 10</strong></h3>
+        <h4>Please rate how much you agree with this stateent: "I absolutely adore bunnies and rabbits!" (1 being disagreement and 5 being agreement)</h4>
+        <img id="bun9" src="https://i.pinimg.com/736x/0c/d4/cc/0cd4cc617d5d3052d6819f437aba25c9--cutest-bunnies-cute-bunny.jpg" alt="bunny10" height="500">
+        <br>
+        <select class="chosen-select" id="score10">
+          <option value=""></option>
+          <option value="1">1 (I have no soul)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Of course I love bunnies)</option>
+        </select>
+
+      </section>
+    </section>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+    <br>
+    <a href="/">
+      <button type="button" class="btn btn-danger">
+        Return Home
+      </button>
+    </a>
+    <hr>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">Raw API Friends List</a> | <a href="https://github.com/archeopteryx/friendFinder">Archeopteryx GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+      <div class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body text-center">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <script type="text/javascript">
+
+    // Listener for submit button click
+    $('#submit').on('click', (event) => {
+      console.log("it hath been clicked!")
+
+        // prevents the default submit button action
+        event.preventDefault();
+
+        // Set local variables
+        let matchStatus = $('.modal-title');
+        let modalBody = $('.modal-body');
+
+        // capture responses to local variables
+        let name = $('#name').val().trim();
+        let photo = $('#photo').val().trim();
+
+        // capture score values as a number/integer
+        let q1 = parseInt($('#score1').val());
+        let q2 = parseInt($('#score2').val());
+        let q3 = parseInt($('#score3').val());
+        let q4 = parseInt($('#score4').val());
+        let q5 = parseInt($('#score5').val());
+        let q6 = parseInt($('#score6').val());
+        let q7 = parseInt($('#score7').val());
+        let q8 = parseInt($('#score8').val());
+        let q9 = parseInt($('#score9').val());
+        let q10 = parseInt($('#score10').val());
+
+        // Set data to be sent to server
+        var userData = {
+            name: name,
+            photo: photo,
+            scores: [
+                q1,
+                q2,
+                q3,
+                q4,
+                q5,
+                q6,
+                q7,
+                q8,
+                q9,
+                q10
+            ]
+        };
+
+        // If responses are valid and not blank then do these
+        if (
+            (name !== '') && (photo !== '') && (!isNaN(q1)) &&
+            (!isNaN(q2)) && (!isNaN(q3)) && (!isNaN(q4)) &&
+            (!isNaN(q5)) && (!isNaN(q6)) && (!isNaN(q7)) &&
+            (!isNaN(q8)) && (!isNaN(q9)) && (!isNaN(q10))
+        ) {
+            // Grab the URL of the website
+            let currentURL = window.location.origin;
+            // AJAX post the data to the friends API.
+            $.post("/api/friends", userData)
+            .then(function(data) {
+              console.log(data); 
+              });
+            // $.post(currentURL + "/api/friends", userData, (data) => {
+
+            //     // If the data is not undefined, then show this
+            //     if (data.name !== undefined) {
+            //         matchStatus.html('Your match...');
+            //         modalBody.html('<p>...is ' + data.name + '!</p><img src="' + data.photo + '" height="200">');
+            //     } else {
+            //       // If data is defined, but there's no one else stored in there, show this
+            //         matchStatus.html('Not enough data!');
+            //         modalBody.html('<p>Unfortunately there is not enough people in the Friend Finder to find your Bunny Pal! Please try again after waiting for others to join!</p>');
+            //     }
+            //     // Toggle modal on
+            //     $('.modal').modal('toggle');
+            // });
+        } else {
+            // If the form was not valid, this error is shown
+            matchStatus.html('Error...');
+            modalBody.html('Please answer all questions on the form.');
+            // Toggle modal on
+            $('.modal').modal('toggle');
+        }
+    });
+
+
+  </script>
+
+</body>
+
+</html>
